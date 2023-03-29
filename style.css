@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 45%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #111;
+  border-radius: 4px;
+}
+
+.clock .dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.clock .dots .dot {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.clock .digit {
+  width: 20%;
+  height: 90%;
+}
+
+.clock .digit .line {
+  background-color: #999;
+  border-radius: 8px;
+}
+
+.clock .digit .line.active {
+  background-color: red;
+}
+
+.clock .digit .line.horizontal-line {
+  width: 90%;
+  height: 10px;
+  margin: 0 auto;
+}
+
+.clock .digit .side-lines {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock .digit .line.vertical-line {
+  width: 10px;
+  height: 100%;
+}
